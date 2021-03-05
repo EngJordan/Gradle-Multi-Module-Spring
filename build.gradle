@@ -1,10 +1,10 @@
+allprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'application'
 
-plugins {
-    id 'java-library'
-}
-
-repositories {
-    jcenter()
+    repositories {
+        jcenter()
+    }
 }
 
 dependencies {
