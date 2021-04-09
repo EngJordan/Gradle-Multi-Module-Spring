@@ -1,8 +1,13 @@
 plugins {
+    id 'java'
     id 'org.springframework.boot'
     id 'io.spring.dependency-management'
 }
 
-version 'unspecified'
+mainClassName = 'Main'
 
-mainClassName = 'MainController'
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation project (':UserService')
+    implementation project (':Data')
+}

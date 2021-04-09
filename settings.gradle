@@ -1,2 +1,5 @@
 rootProject.name = 'Game'
+include 'UserService'
+include 'Data'
 include 'Controller'
+
